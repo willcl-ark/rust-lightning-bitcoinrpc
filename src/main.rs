@@ -324,9 +324,6 @@ impl ChannelMonitor {
 		Ok(())
 	}
 }
-#[cfg(any(target_os = "macos", target_os = "ios"))]
-#[error("OSX creatively eats your data, using Lightning on OSX is unsafe")]
-struct ERR {}
 
 impl channelmonitor::ManyChannelMonitor<InMemoryChannelKeys> for ChannelMonitor {
 	fn add_monitor(&self, funding_txo: chain::transaction::OutPoint, monitor: channelmonitor::ChannelMonitor<InMemoryChannelKeys>) -> Result<(), channelmonitor::ChannelMonitorUpdateErr> {
