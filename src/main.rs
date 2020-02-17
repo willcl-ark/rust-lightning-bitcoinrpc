@@ -740,7 +740,7 @@ async fn main() {
 					let invoice_res = lightning_invoice::InvoiceBuilder::new(match network {
 							constants::Network::Bitcoin => lightning_invoice::Currency::Bitcoin,
 							constants::Network::Testnet => lightning_invoice::Currency::BitcoinTestnet,
-							constants::Network::Regtest => lightning_invoice::Currency::BitcoinTestnet, //TODO
+							constants::Network::Regtest => lightning_invoice::Currency::Regtest, //TODO
 						}).payment_hash(payment_hash).description("rust-lightning-bitcoinrpc invoice".to_string())
 						//.route(chans)
 						.current_timestamp()
