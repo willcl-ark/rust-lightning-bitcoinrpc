@@ -25,6 +25,9 @@ base64 = "0.9"
 [patch.crates-io]
 tokio = { git = "https://github.com/tokio-rs/tokio" }
 
+[patch."https://github.com/TheBlueMatt/rust-lightning.git"]
+lightning = {path = "src/rust-lightning/lightning"}
+
 [profile.release]
 panic = "abort"
 
