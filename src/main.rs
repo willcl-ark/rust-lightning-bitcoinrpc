@@ -528,7 +528,7 @@ async fn main() {
 	let peer_manager_timer = peer_manager.clone();
 	let chan_manager_timer = channel_manager.clone();
 	join_handles.push(tokio::spawn(async move {
-		let mut intvl = tokio::time::interval(Duration::from_secs(60));
+		let mut intvl = tokio::time::interval(Duration::from_secs(600));
 		loop {
 			intvl.tick().await;
 			peer_manager_timer.timer_tick_occured();
