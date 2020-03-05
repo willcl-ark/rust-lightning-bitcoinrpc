@@ -36,3 +36,6 @@ panic = "abort"
 
 [build-dependencies]
 cc = "1.0"
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = { version = "0.13.1", default-features = false }

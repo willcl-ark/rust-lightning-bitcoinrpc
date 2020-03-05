@@ -537,6 +537,22 @@ async fn main() {
 		}
 	}));
 
+	println!("             ___ _   _ ___ _____");
+	println!("            | _ \\ | | / __|_   _|");
+	println!("            |   / |_| \\__ \\ | |");
+	println!("            |_|_\\\\___/|___/ |_|");
+	println!();
+	println!(" _    ___ ___ _  _ _____ _  _ ___ _  _  ___");
+	println!("| |  |_ _/ __| || |_   _| \\| |_ _| \\| |/ __|");
+	println!("| |__ | | (_ | __ | | | | .` || || .` | (_ |");
+	println!("|____|___\\___|_||_| |_| |_|\\_|___|_|\\_|\\___|");
+	println!();
+	println!("        _   _  _ ___  ___  ___ ___ ___");
+	println!("       /_\\ | \\| |   \\| _ \\/ _ \\_ _|   \\");
+	println!("      / _ \\| .` | |) |   / (_) | || |) |");
+	println!("     /_/ \\_\\_|\\_|___/|_|_\\\\___/___|___/");
+
+
 	println!("Bound on port {}! Our node_id: {}", port, hex_str(&PublicKey::from_secret_key(&secp_ctx, &keys.get_node_secret()).serialize()));
 	println!("Started interactive shell! Commands:");
 	println!("'a ip:port alias' Announce our node with the given ip:port as listening and the given alias");
