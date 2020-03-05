@@ -531,7 +531,8 @@ async fn main() {
 		let mut intvl = tokio::time::interval(Duration::from_secs(600));
 		loop {
 			intvl.tick().await;
-			peer_manager_timer.timer_tick_occured();
+			/// This completely disables PING and PONG ticks, previously every 30 seconds
+			// peer_manager_timer.timer_tick_occured();
 			chan_manager_timer.timer_chan_freshness_every_min();
 		}
 	}));
