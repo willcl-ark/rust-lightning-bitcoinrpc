@@ -537,6 +537,7 @@ async fn main() {
 		}
 	}));
 
+	println!();
 	println!("             ___ _   _ ___ _____");
 	println!("            | _ \\ | | / __|_   _|");
 	println!("            |   / |_| \\__ \\ | |");
@@ -551,7 +552,7 @@ async fn main() {
 	println!("       /_\\ | \\| |   \\| _ \\/ _ \\_ _|   \\");
 	println!("      / _ \\| .` | |) |   / (_) | || |) |");
 	println!("     /_/ \\_\\_|\\_|___/|_|_\\\\___/___|___/");
-
+	println!();
 
 	println!("Bound on port {}! Our node_id: {}", port, hex_str(&PublicKey::from_secret_key(&secp_ctx, &keys.get_node_secret()).serialize()));
 	println!("Started interactive shell! Commands:");
