@@ -336,6 +336,7 @@ version = "0.0.10"
 dependencies = [
  "bitcoin 0.21.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "bitcoin_hashes 0.7.4 (registry+https://github.com/rust-lang/crates.io-index)",
+ "hex 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "secp256k1 0.15.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -714,7 +715,7 @@ dependencies = [
 [[package]]
 name = "tokio"
 version = "0.2.13"
-source = "git+https://github.com/tokio-rs/tokio#1eb6131321b5bb8e0ccdb7b9433f6f0ef47821f2"
+source = "git+https://github.com/tokio-rs/tokio#826fc21abfd04779cde92e4cc33de2adb42cf327"
 dependencies = [
  "bytes 0.5.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "fnv 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -731,7 +732,7 @@ dependencies = [
 [[package]]
 name = "tokio-macros"
 version = "0.2.5"
-source = "git+https://github.com/tokio-rs/tokio#1eb6131321b5bb8e0ccdb7b9433f6f0ef47821f2"
+source = "git+https://github.com/tokio-rs/tokio#826fc21abfd04779cde92e4cc33de2adb42cf327"
 dependencies = [
  "proc-macro2 1.0.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "quote 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
